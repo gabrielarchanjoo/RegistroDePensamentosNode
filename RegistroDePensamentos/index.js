@@ -16,7 +16,7 @@ const toughtsRoutes = require("./routes/toughtsRoutes");
 const authRoutes = require("./routes/authRoutes");
 const ToughController = require("./controllers/ToughtController");
 
-app.engine("handlebars", exphbs());
+app.engine("handlebars", exphbs.engine());
 app.set("view engine", "handlebars");
 
 app.use(
